@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>[ Personal Finance Tracker ]</h1>
+
+    <div class="transaction-form">
+        <h2 id="changename">Add Transaction</h2>
+        <form id="transactionForm">
+            <select id="transactionType" required>
+                <option value="" disabled selected>Select Transaction Type</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <br>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <br>
+            <input type="text" id="category" placeholder="Comments" required>
+            <br>
+            <input type="date" id="date" required>
+            <br>
+            <input type="submit" value="Save">
+        </form>
+    </div>
+    <div class="balance" id="balance">Current Balance: Rs. 0.00</div>
+    <br>
+    <div class="transaction-list">
+        <h2>Transaction List</h2>
+        <div id="transactions"></div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
