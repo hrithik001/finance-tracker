@@ -1,6 +1,11 @@
+:root{
+    --bgColor:rgb(194, 229, 243);
+    --submitafter:rgb(92, 144, 151);
+        --submitbefore:rgb(143, 177, 179);
+}
 body {
     font-family: Arial, sans-serif;
-    background-color:rgba(226, 82, 255, 0.884);
+    background-color:rgba(162, 221, 231, 0.884);
     
     margin: 0;
     padding: 20px;
@@ -13,7 +18,7 @@ h1 {
 .transaction-form {
     max-width: 400px;
     margin: 20px auto;
-    background-color:rgb(210, 21, 235);
+    background-color:var(--bgColor);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 5px rgb(0, 0, 0);
@@ -37,13 +42,13 @@ h1 {
 }
 
 .transaction-form input[type="submit"] {
-    background-color:rgb(193, 49, 212);
+    background-color:var(--submitbefore);
     color: #fff;
     cursor: pointer;
 }
 
 .transaction-form input[type="submit"]:hover {
-    background-color:rgb(166, 7, 172);
+    background-color:var(--submitafter);
 }
 
 .transaction-list {
